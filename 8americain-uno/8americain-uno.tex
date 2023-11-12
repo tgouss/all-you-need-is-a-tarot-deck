@@ -1,0 +1,52 @@
+\newpage
+
+\section{8 américain (UNO)}
+
+
+\obj
+\begin{itemize}
+  \item Se débarrasser de toutes ses cartes.
+  \item[] {\Large \fontseries{b}\selectfont {OU}}  Minimiser son nombre de points.
+\end{itemize}
+
+\ins
+\begin{itemize}
+  \item Distribuer 5 cartes par personne.
+  \item Déposer 1 carte face visible.
+  \item Former la pioche avec le reste.
+\end{itemize}
+
+
+\der
+\begin{itemize}
+  \item À tour de rôle, chaque joueur doit :
+    \begin{itemize}
+      \item Recouvrir la carte visible d'une carte de la même couleur/valeur ou d'un joker.
+      \item Piocher une carte et ne pas poser de carte.
+    \end{itemize}
+  \item Lorsqu'un joueur dépose son avant-dernière carte il doit annoncer ``UNO'', si un autre joueur annonce avant lui ``CONTRE-UNO'' alors il doit piocher deux cartes.
+\end{itemize}
+
+\vic
+\begin{itemize}
+  \item Le premier joueur s'étant débérassé de toutes ses cartes gagne la manche. Les autres joueurs marquent :
+  \begin{itemize}
+    \item 20 points par habillé et As.
+    \item Autant de points que le numéro sur la carte.
+  \end{itemize}
+\end{itemize}
+
+
+\rol
+\begin{itemize}
+    \item Cavalier : Change de couleur.
+    \item As :  Le joueur suivant pioche 2 cartes.
+    \item Valet : Change de sens.
+    \item Joker : Annule une attaque (à jouer au tour des autres) .
+    \item Roi : Le joueur rejoue.
+    \item Reine : Le joueur suivant saute son tour.
+\end{itemize}
+
+\begin{tikzpicture}[remember picture, overlay, shift={(current page.north east)},  x={(current page.south east)}, y={(current page.north west)}]
+  \node[below left] at (-1.4cm,-1.4cm){\includegraphics[width=8cm,height=8cm,keepaspectratio]{8americain-uno/8americain-uno.png}};
+\end{tikzpicture}

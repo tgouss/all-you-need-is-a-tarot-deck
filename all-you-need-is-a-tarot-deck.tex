@@ -1,0 +1,143 @@
+\documentclass{book}
+%\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.9cm}
+
+
+\title{Jeu de cartes à tout faire !}
+\author{theophile.gousselot }
+\date{Février 2022}
+
+
+\renewcommand*\contentsname{Les jeux !}
+\usepackage{graphicx}
+\usepackage{color}
+
+%\usepackage{sectsty}
+%\sectionfont{\fontsize{12}{15}\selectfont}
+
+% Tikz / PGF
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,calc,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,automata,through,positioning,scopes,decorations.shapes,decorations.text,decorations.pathmorphing,shadows}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,fit,positioning,shapes.symbols,chains}
+\usepackage{pgfplots, pgfplotstable}
+\pgfplotsset{compat=1.7}
+
+\usepackage{fancyhdr} 
+\fancyhf{}
+\cfoot{\thepage}
+\pagestyle{fancy} 
+
+\usepackage{minitoc}
+\renewcommand{\mtifont}{\Large\sffamily\tt}
+\renewcommand{\mtcfont}{\sffamily\tt}
+\renewcommand{\mtcSfont}{\sffamily\tt}
+\renewcommand{\mtcSSfont}{\sffamily\tt}
+\renewcommand{\mtcSSSfont}{\sffamily\tt}
+
+\dominitoc[n]
+\mtcsetrules{*}{off}
+
+\usepackage{type1cm}
+\usepackage{titlesec, blindtext}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[display]
+{\normalfont\fontsize{40pt}{42pt}\selectfont \tt}{\chaptertitlename\ \thechapter}{20pt}{\fontsize{48pt}{50pt}\selectfont }
+\titleformat{\section}
+{\normalfont\huge\tt}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\tt}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\normalsize\tt}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]
+{\normalfont\normalsize\bf\tt}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]
+{\normalfont\normalsize\tt}{\thesubparagraph}{1em}{}
+
+
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+\usepackage{ulem}
+
+
+%\newcommand{\obj}[0]{\Large \fontseries{b}\selectfont Objectif}
+%\newcommand{\ins}[0]{\Large \fontseries{b}\selectfont Installation}
+%\newcommand{\der}[0]{\Large \fontseries{b}\selectfont Déroulement}
+%\newcommand{\vic}[0]{\Large \fontseries{b}\selectfont Victoire}
+%\newcommand{\rol}[0]{\Large \fontseries{b}\selectfont Rôles des cartes}
+
+\newcommand{\obj}[0]{{ \vspace{0.5cm} \noindent \Large  \uline{Objectif :}}}
+\newcommand{\ins}[0]{{ \vspace{0.5cm} \noindent \Large  \uline{Installation :}}}
+\newcommand{\der}[0]{{ \vspace{0.5cm} \noindent \Large  \uline{Déroulement :}}}
+\newcommand{\vic}[0]{{ \vspace{0.5cm} \noindent \Large  \uline{Victoire :}}}
+\newcommand{\rol}[0]{{ \vspace{0.5cm} \noindent \Large  \uline{Rôles des cartes :}}}
+
+\let\olditemize\itemize
+\renewcommand\itemize{\olditemize\addtolength{\itemsep}{-0.2cm}}
+
+\begin{document}
+\tt
+\begin{center}
+
+
+\huge Jeu de cartes à tout faire ! \\
+
+
+\Large Théophile Gousselot\\
+2022
+\end{center}
+
+
+\tableofcontents
+
+\newpage
+
+\section*{Introduction}
+\subsection*{Préambule}
+
+\subsection*{Matériel requis}
+\begin{itemize}
+    \item Un jeu de carte de tarot et c'est tout !
+\end{itemize}
+
+
+ 
+\chapter{Les Jeux de Cartes}
+\minitoc
+\input{8americain-uno/8americain-uno}
+
+\newpage
+\chapter{Les Jeux Alternatifs}
+\minitoc
+
+\newpage
+\section{Le Lama}
+\section{Mafia de cuba}
+\section{Stupid vautour}
+\section{The Crew - La foule}
+\section{Mafia de cuba}
+\section{.}
+\section{.}
+\section{.}
+
+
+\newpage
+\section{TODO}
+\begin{itemize}
+    \item lister tous les jeux
+    \item définir format (photo, objectif, préparation, déroulement, victoire, réprésentation/traduction des cartes)
+\end{itemize}
+\end{document}
+
